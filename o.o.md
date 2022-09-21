@@ -18,3 +18,37 @@ Para usar uma metáfora culinária: toda omelete segue basicamente o mesmo proce
 Polimorfismo
 Definido como “a condição de ocorrer em várias formas diferentes”. Basicamente, significa apenas que podemos chamar o mesmo método em objetos diferentes.
 
+
+java
+
+
+public class Pessoa {
+		private String primeiroNome;
+		private String ultimoNome;
+		private String nomesDoMeio;
+
+
+		public Pessoa(String primeiro, String meio, String ultimo) {
+		  primeiroNome = primeiro;
+		  ultimoNome = ultimo;
+		  nomesDoMeio = meio;
+		}
+
+
+		public String getNomeCompleto() {
+		  String nomeCompleto = primeiroNome + " " + nomesDoMeio + " " + ultimoNome;
+		  return nomeCompleto;
+		}
+
+	  }
+
+
+
+kotlin 
+
+
+class Pessoa(private val primeiroNome: String, private val nomesDoMeio: String, private val ultimoNome: String) {
+
+    val nomeCompleto: String
+        get() = "$primeiroNome $nomesDoMeio $ultimoNome"
+}
