@@ -7,7 +7,7 @@ para o problema, o algoritmo identifica padrões nos dados, aprende com as obser
 previsões e é corrigido pelo operador, e esse processo continua até que o algoritmo atinja um alto nível de
 precisão/desempenho.
 
-Aprendizagem semi-supervisionada:ap
+Aprendizagem semi-supervisionada:
 
 O aprendizado semissupervisionado é semelhante ao aprendizado supervisionado, mas usa dados rotulados e não
 rotulados. Os dados rotulados são essencialmente informações que possuem tags significativas para que o algoritmo
